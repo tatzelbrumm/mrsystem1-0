@@ -5,9 +5,5 @@ ar: creating libfsm.a
 ar: creating libliste.a
 ar: creating libmenge.a
 ar: creating libmr_can.a
-cmd_get_cmd.c: In function ‘MrIpcCmdGetCmd’:
-cmd_get_cmd.c:13:14: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
-   13 |          if (strcmp(cJSON_GetObjectItem((cJSON *)MrIpcGetPrivate(Data),
-      |              ^~~~~~
 ar: creating libmr_ipc.a
 ar: creating libstack.a
