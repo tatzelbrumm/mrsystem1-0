@@ -11,8 +11,3 @@ cmd_get_cmd.c:13:14: warning: implicit declaration of function ‘strcmp’ [-Wi
       |              ^~~~~~
 ar: creating libmr_ipc.a
 ar: creating libstack.a
-zentrale.c: In function ‘WriteLokOfLokomotiveCs2’:
-zentrale.c:72:4: warning: implicit declaration of function ‘Cs2WriteHexValueByName’; did you mean ‘Cs2WriteIntValueByName’? [-Wimplicit-function-declaration]
-   72 |    Cs2WriteHexValueByName(LokCs2Stream, "adresse", ZentraleLokGetAdresse(Lok), 1);
-      |    ^~~~~~~~~~~~~~~~~~~~~~
-      |    Cs2WriteIntValueByName
