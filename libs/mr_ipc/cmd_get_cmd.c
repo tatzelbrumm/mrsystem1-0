@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <string.h>
 #include "cJSON/cJSON.h"
 #include "mr_ipc.h"
 
