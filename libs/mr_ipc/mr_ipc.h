@@ -84,6 +84,8 @@ int MrIpcAccept(int ServerSock);
 int MrIpcSend(int socket, MrIpcCmdType *Data);
 int MrIpcRecv(int socket, MrIpcCmdType *Data);
 
+void MrIpcDecode(MrIpcCmdType *Data);
+
 void MrIpcEncodeFromCan(MrIpcCmdType *Data, MrCs2CanDataType *CanMsg);
 void MrIpcDecodeToCan(MrIpcCmdType *Data, MrCs2CanDataType *CanMsg);
 
