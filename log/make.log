@@ -1,0 +1,468 @@
+if [ ! -d include ] ; then mkdir include ; fi
+if [ ! -d lib ] ; then mkdir lib ; fi
+make -C libs CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs'
+make -C bitmask  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/bitmask'
+cp bitmask.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/bitmask'
+make -C bytestream  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/bytestream'
+cc  -I../../include -c get_long.c
+cc  -I../../include -c get_int.c
+cc  -I../../include -c set_long.c
+cc  -I../../include -c set_int.c
+ar rvs libbytestream.a get_long.o get_int.o set_long.o set_int.o
+a - get_long.o
+a - get_int.o
+a - set_long.o
+a - set_int.o
+cp libbytestream.a  ../../lib
+cp bytestream.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/bytestream'
+make -C bool  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/bool'
+cp boolean.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/bool'
+make -C compare  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/compare'
+cp compare.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/compare'
+make -C cs2_parse  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/cs2_parse'
+cc  -I../../include -c parser.c
+cc  -I../../include -c scanner.c
+cc  -I../../include -c write_cs2.c
+ar rvs libcs2_parse.a parser.o scanner.o write_cs2.o
+a - parser.o
+a - scanner.o
+a - write_cs2.o
+cp libcs2_parse.a  ../../lib
+cp scanner.h ../../include
+cp parser.h ../../include
+cp write_cs2.h ../../include
+cp cs2_types.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/cs2_parse'
+make -C dliste  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/dliste'
+cc  -I../../include -c dliste_ahead.c
+cc  -I../../include -c dliste_append.c
+cc  -I../../include -c dliste_create.c
+cc  -I../../include -c dliste_del_akt.c
+cc  -I../../include -c dliste_del_first.c
+cc  -I../../include -c dliste_del_last.c
+cc  -I../../include -c dliste_delete.c
+cc  -I../../include -c dliste_destroy.c
+cc  -I../../include -c dliste_finde.c
+cc  -I../../include -c dliste_first.c
+cc  -I../../include -c dliste_init.c
+cc  -I../../include -c dliste_insert.c
+cc  -I../../include -c dliste_is_empty.c
+cc  -I../../include -c dliste_last.c
+cc  -I../../include -c dliste_next.c
+cc  -I../../include -c dliste_prev.c
+cc  -I../../include -c dliste_citer.c
+cc  -I../../include -c dliste_diter.c
+cc  -I../../include -c dliste_iiter.c
+ar rvs libdliste.a dliste_ahead.o dliste_append.o dliste_create.o dliste_del_akt.o dliste_del_first.o dliste_del_last.o dliste_delete.o dliste_destroy.o dliste_finde.o dliste_first.o dliste_init.o dliste_insert.o dliste_is_empty.o dliste_last.o dliste_next.o dliste_prev.o dliste_citer.o dliste_diter.o dliste_iiter.o
+a - dliste_ahead.o
+a - dliste_append.o
+a - dliste_create.o
+a - dliste_del_akt.o
+a - dliste_del_first.o
+a - dliste_del_last.o
+a - dliste_delete.o
+a - dliste_destroy.o
+a - dliste_finde.o
+a - dliste_first.o
+a - dliste_init.o
+a - dliste_insert.o
+a - dliste_is_empty.o
+a - dliste_last.o
+a - dliste_next.o
+a - dliste_prev.o
+a - dliste_citer.o
+a - dliste_diter.o
+a - dliste_iiter.o
+cp libdliste.a  ../../lib
+cp dliste.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/dliste'
+make -C fsm  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/fsm'
+cc  -I../../include -c fsm_create.c
+cc  -I../../include -c fsm_destroy.c
+cc  -I../../include -c fsm_init.c
+cc  -I../../include -c fsm_exit.c
+cc  -I../../include -c fsm_do.c
+ar rvs libfsm.a fsm_create.o fsm_destroy.o fsm_init.o fsm_exit.o fsm_do.o
+a - fsm_create.o
+a - fsm_destroy.o
+a - fsm_init.o
+a - fsm_exit.o
+a - fsm_do.o
+cp libfsm.a  ../../lib
+cp fsm.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/fsm'
+make -C liste  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/liste'
+cc  -I../../include -c liste_ahead.c
+cc  -I../../include -c liste_append.c
+cc  -I../../include -c liste_create.c
+cc  -I../../include -c liste_del_first.c
+cc  -I../../include -c liste_delete.c
+cc  -I../../include -c liste_destroy.c
+cc  -I../../include -c liste_finde.c
+cc  -I../../include -c liste_first.c
+cc  -I../../include -c liste_is_empty.c
+cc  -I../../include -c liste_init.c
+cc  -I../../include -c liste_insert.c
+cc  -I../../include -c liste_next.c
+ar rvs libliste.a liste_ahead.o liste_append.o liste_create.o liste_del_first.o liste_delete.o liste_destroy.o liste_finde.o liste_first.o liste_is_empty.o liste_init.o liste_insert.o liste_next.o
+a - liste_ahead.o
+a - liste_append.o
+a - liste_create.o
+a - liste_del_first.o
+a - liste_delete.o
+a - liste_destroy.o
+a - liste_finde.o
+a - liste_first.o
+a - liste_is_empty.o
+a - liste_init.o
+a - liste_insert.o
+a - liste_next.o
+cp libliste.a  ../../lib
+cp liste.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/liste'
+make -C menge  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/menge'
+cc  -I../../include -c menge_add.c
+cc  -I../../include -c menge_create.c
+cc  -I../../include -c menge_destroy.c
+cc  -I../../include -c menge_first.c
+cc  -I../../include -c menge_init.c
+cc  -I../../include -c menge_next.c
+cc  -I../../include -c menge_remove.c
+cc  -I../../include -c menge_citer.c
+cc  -I../../include -c menge_iiter.c
+cc  -I../../include -c menge_diter.c
+ar rvs libmenge.a menge_add.o menge_create.o menge_destroy.o menge_first.o menge_init.o menge_next.o menge_remove.o menge_citer.o menge_iiter.o menge_diter.o
+a - menge_add.o
+a - menge_create.o
+a - menge_destroy.o
+a - menge_first.o
+a - menge_init.o
+a - menge_next.o
+a - menge_remove.o
+a - menge_citer.o
+a - menge_iiter.o
+a - menge_diter.o
+cp libmenge.a  ../../lib
+cp menge.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/menge'
+make -C mr_can  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/mr_can'
+cc  -I../../include -c 60113_start.c
+cc  -I../../include -c connect_can.c
+cc  -I../../include -c enceth.c
+cc  -I../../include -c deceth.c
+cc  -I../../include -c sendeth.c
+cc  -I../../include -c recveth.c
+cc  -I../../include -c starteth.c
+cc  -I../../include -c starteth_bc.c
+cc  -I../../include -c mk_bcaddr.c
+cc  -I../../include -c starteth_tcp.c
+cc  -I../../include -c accept_tcp.c
+cc  -I../../include -c cs2_encode.c
+cc  -I../../include -c cs2_decode.c
+cc  -I../../include -c calc_hash.c
+cc  -I../../include -c crc.c
+cc  -I../../include -c trace.c
+cc  -I../../include -c cand0000.c
+cc  -I../../include -c cand0001.c
+cc  -I../../include -c cand0002.c
+cc  -I../../include -c cand0003.c
+cc  -I../../include -c cand0004.c
+cc  -I../../include -c cand0005.c
+cc  -I../../include -c cand0006.c
+cc  -I../../include -c cand0007.c
+cc  -I../../include -c cand0008.c
+cc  -I../../include -c cand0009.c
+cc  -I../../include -c cand000a.c
+cc  -I../../include -c cand000b.c
+cc  -I../../include -c cand000c.c
+cc  -I../../include -c cand0080.c
+cc  -I../../include -c cane0000.c
+cc  -I../../include -c cane0001.c
+cc  -I../../include -c cane0002.c
+cc  -I../../include -c cane0003.c
+cc  -I../../include -c cane0004.c
+cc  -I../../include -c cane0005.c
+cc  -I../../include -c cane0006.c
+cc  -I../../include -c cane0007.c
+cc  -I../../include -c cane0008.c
+cc  -I../../include -c cane0009.c
+cc  -I../../include -c cane000a.c
+cc  -I../../include -c cane000b.c
+cc  -I../../include -c cane000c.c
+cc  -I../../include -c cane0080.c
+cc  -I../../include -c cand01.c
+cc  -I../../include -c cand02.c
+cc  -I../../include -c cand03.c
+cc  -I../../include -c cand04.c
+cc  -I../../include -c cand05.c
+cc  -I../../include -c cand06.c
+cc  -I../../include -c cand07.c
+cc  -I../../include -c cand08.c
+cc  -I../../include -c cand0b.c
+cc  -I../../include -c cand10.c
+cc  -I../../include -c cand11.c
+cc  -I../../include -c cand18.c
+cc  -I../../include -c cand1d.c
+cc  -I../../include -c cand20.c
+cc  -I../../include -c cand21.c
+cc  -I../../include -c cand30.c
+cc  -I../../include -c cane01.c
+cc  -I../../include -c cane02.c
+cc  -I../../include -c cane03.c
+cc  -I../../include -c cane04.c
+cc  -I../../include -c cane05.c
+cc  -I../../include -c cane06.c
+cc  -I../../include -c cane07.c
+cc  -I../../include -c cane08.c
+cc  -I../../include -c cane0b.c
+cc  -I../../include -c cane10.c
+cc  -I../../include -c cane11.c
+cc  -I../../include -c cane18.c
+cc  -I../../include -c cane1d.c
+cc  -I../../include -c cane20.c
+cc  -I../../include -c cane21.c
+cc  -I../../include -c cane30.c
+ar rvs libmr_can.a 60113_start.o connect_can.o enceth.o deceth.o sendeth.o recveth.o starteth.o starteth_bc.o mk_bcaddr.o starteth_tcp.o accept_tcp.o cs2_encode.o cs2_decode.o calc_hash.o crc.o trace.o cand0000.o cand0001.o cand0002.o cand0003.o cand0004.o cand0005.o cand0006.o cand0007.o cand0008.o cand0009.o cand000a.o cand000b.o cand000c.o cand0080.o cane0000.o cane0001.o cane0002.o cane0003.o cane0004.o cane0005.o cane0006.o cane0007.o cane0008.o cane0009.o cane000a.o cane000b.o cane000c.o cane0080.o cand01.o cand02.o cand03.o cand04.o cand05.o cand06.o cand07.o cand08.o cand0b.o cand10.o cand11.o cand18.o cand1d.o cand20.o cand21.o cand30.o cane01.o cane02.o cane03.o cane04.o cane05.o cane06.o cane07.o cane08.o cane0b.o cane10.o cane11.o cane18.o cane1d.o cane20.o cane21.o cane30.o
+a - 60113_start.o
+a - connect_can.o
+a - enceth.o
+a - deceth.o
+a - sendeth.o
+a - recveth.o
+a - starteth.o
+a - starteth_bc.o
+a - mk_bcaddr.o
+a - starteth_tcp.o
+a - accept_tcp.o
+a - cs2_encode.o
+a - cs2_decode.o
+a - calc_hash.o
+a - crc.o
+a - trace.o
+a - cand0000.o
+a - cand0001.o
+a - cand0002.o
+a - cand0003.o
+a - cand0004.o
+a - cand0005.o
+a - cand0006.o
+a - cand0007.o
+a - cand0008.o
+a - cand0009.o
+a - cand000a.o
+a - cand000b.o
+a - cand000c.o
+a - cand0080.o
+a - cane0000.o
+a - cane0001.o
+a - cane0002.o
+a - cane0003.o
+a - cane0004.o
+a - cane0005.o
+a - cane0006.o
+a - cane0007.o
+a - cane0008.o
+a - cane0009.o
+a - cane000a.o
+a - cane000b.o
+a - cane000c.o
+a - cane0080.o
+a - cand01.o
+a - cand02.o
+a - cand03.o
+a - cand04.o
+a - cand05.o
+a - cand06.o
+a - cand07.o
+a - cand08.o
+a - cand0b.o
+a - cand10.o
+a - cand11.o
+a - cand18.o
+a - cand1d.o
+a - cand20.o
+a - cand21.o
+a - cand30.o
+a - cane01.o
+a - cane02.o
+a - cane03.o
+a - cane04.o
+a - cane05.o
+a - cane06.o
+a - cane07.o
+a - cane08.o
+a - cane0b.o
+a - cane10.o
+a - cane11.o
+a - cane18.o
+a - cane1d.o
+a - cane20.o
+a - cane21.o
+a - cane30.o
+cp libmr_can.a  ../../lib
+cp mr_can.h ../../include
+cp m_cs2ms2.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/mr_can'
+#if [ ! -f ../archive/cJSONFiles.zp ] ; then wget -P ../archive http://sourceforge.net/projects/cjson/files/latest/download/cJSONFiles.zip ; fi
+if [ ! -d mr_ipc/cJSON ] ; then unzip ../archive/cJSONFiles.zip -d mr_ipc ; fi
+if [ -d mr_ipc/__MACOSX ] ; then rm -r mr_ipc/__MACOSX ; fi
+make -C mr_ipc  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/mr_ipc'
+cc  -I../../include -c create.c
+cc  -I../../include -c destroy.c
+cc  -I../../include -c init.c
+cc  -I../../include -c exit.c
+cc  -I../../include -c connect.c
+cc  -I../../include -c server.c
+cc  -I../../include -c accept.c
+cc  -I../../include -c send.c
+cc  -I../../include -c receive.c
+cc  -I../../include -c decode.c
+cc  -I../../include -c encode_can.c
+cc  -I../../include -c decode_can.c
+cd cJSON ; cc  -c cJSON.c
+cc  -I../../include -c cmd_get_cmd.c
+cc  -I../../include -c cmd_set_null.c
+cc  -I../../include -c cmd_set_run.c
+cc  -I../../include -c cmd_get_run.c
+cc  -I../../include -c cmd_set_locomotive_dir.c
+cc  -I../../include -c cmd_set_locomotive_speed.c
+cc  -I../../include -c cmd_set_locomotive_fkt.c
+cc  -I../../include -c cmd_get_locomotive_dir.c
+cc  -I../../include -c cmd_get_locomotive_speed.c
+cc  -I../../include -c cmd_get_locomotive_fkt.c
+cc  -I../../include -c cmd_set_acc_pos.c
+cc  -I../../include -c cmd_get_acc_pos.c
+cc  -I../../include -c cmd_set_member.c
+cc  -I../../include -c cmd_get_member.c
+cc  -I../../include -c cmd_set_get_member.c
+cc  -I../../include -c cmd_set_get_locname.c
+cc  -I../../include -c cmd_get_get_locname.c
+cc  -I../../include -c cmd_set_get_locinfo.c
+cc  -I../../include -c cmd_get_get_locinfo.c
+cc  -I../../include -c cmd_set_cfg_header.c
+cc  -I../../include -c cmd_get_cfg_header.c
+cc  -I../../include -c cmd_set_cfg_data.c
+cc  -I../../include -c cmd_get_cfg_data.c
+ar rvs libmr_ipc.a create.o destroy.o init.o exit.o connect.o server.o accept.o send.o receive.o decode.o encode_can.o decode_can.o cJSON/cJSON.o cmd_get_cmd.o cmd_set_null.o cmd_set_run.o cmd_get_run.o cmd_set_locomotive_dir.o cmd_set_locomotive_speed.o cmd_set_locomotive_fkt.o cmd_get_locomotive_dir.o cmd_get_locomotive_speed.o cmd_get_locomotive_fkt.o cmd_set_acc_pos.o cmd_get_acc_pos.o cmd_set_member.o cmd_get_member.o cmd_set_get_member.o cmd_set_get_locname.o cmd_get_get_locname.o cmd_set_get_locinfo.o cmd_get_get_locinfo.o cmd_set_cfg_header.o cmd_get_cfg_header.o cmd_set_cfg_data.o cmd_get_cfg_data.o
+a - create.o
+a - destroy.o
+a - init.o
+a - exit.o
+a - connect.o
+a - server.o
+a - accept.o
+a - send.o
+a - receive.o
+a - decode.o
+a - encode_can.o
+a - decode_can.o
+a - cJSON/cJSON.o
+a - cmd_get_cmd.o
+a - cmd_set_null.o
+a - cmd_set_run.o
+a - cmd_get_run.o
+a - cmd_set_locomotive_dir.o
+a - cmd_set_locomotive_speed.o
+a - cmd_set_locomotive_fkt.o
+a - cmd_get_locomotive_dir.o
+a - cmd_get_locomotive_speed.o
+a - cmd_get_locomotive_fkt.o
+a - cmd_set_acc_pos.o
+a - cmd_get_acc_pos.o
+a - cmd_set_member.o
+a - cmd_get_member.o
+a - cmd_set_get_member.o
+a - cmd_set_get_locname.o
+a - cmd_get_get_locname.o
+a - cmd_set_get_locinfo.o
+a - cmd_get_get_locinfo.o
+a - cmd_set_cfg_header.o
+a - cmd_get_cfg_header.o
+a - cmd_set_cfg_data.o
+a - cmd_get_cfg_data.o
+cp libmr_ipc.a  ../../lib
+cp mr_ipc.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/mr_ipc'
+make -C stack  CFLAGS=""  INCLUDE_PATH=../../include LIB_PATH=../../lib
+make[2]: Entering directory '/home/cmaier/C/mrsystem_1.0/libs/stack'
+cc  -I../../include -c stack_create.c
+cc  -I../../include -c stack_destroy.c
+cc  -I../../include -c stack_init.c
+cc  -I../../include -c stack_is_empty.c
+cc  -I../../include -c stack_pop.c
+cc  -I../../include -c stack_push.c
+ar rvs libstack.a stack_create.o stack_destroy.o stack_init.o stack_is_empty.o stack_pop.o stack_push.o
+a - stack_create.o
+a - stack_destroy.o
+a - stack_init.o
+a - stack_is_empty.o
+a - stack_pop.o
+a - stack_push.o
+cp libstack.a  ../../lib
+cp stack.h ../../include
+make[2]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs/stack'
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/libs'
+make -C client_cs2eth CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/client_cs2eth'
+cc  -DTRACE=1 -I../include -c main.c
+cc  -DTRACE=1 -I../include -c cs2eth.c
+cc  -L../lib -o mrcs2eth main.o cs2eth.o  -lmr_ipc -lmr_can -lm -lbytestream
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/client_cs2eth'
+make -C client_inject CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/client_inject'
+cc  -I../include -c main.c
+cc  -I../include -c inject.c
+cc  -L../lib -o mrinject main.o inject.o  -lmr_ipc -lm
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/client_inject'
+make -C client_log CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/client_log'
+cc  -I../include -c main.c
+cc  -I../include -c log.c
+cc  -L../lib -o mrlog main.o log.o  -lmr_ipc -lm
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/client_log'
+make -C client_logms2 CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/client_logms2'
+cc  -I../include -c main.c
+cc  -I../include -c logms2.c
+cc  -L../lib -o mrlogms2 main.o logms2.o  -lmr_ipc -lmr_can -lm -lbytestream
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/client_logms2'
+make -C client_ms1 CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/client_ms1'
+cc  -I../include -c main.c
+cc  -I../include -c ms1.c
+cc  -L../lib -o mrms1 main.o ms1.o  -lmr_ipc -lmr_can -lm
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/client_ms1'
+make -C client_ms2 CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/client_ms2'
+cc  -I../include -c main.c
+cc  -I../include -c ms2.c
+cc  -L../lib -o mrms2 main.o ms2.o  -lmr_ipc -lmr_can -lm -lbytestream
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/client_ms2'
+make -C client_zentrale CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/client_zentrale'
+cc  -I../include -c main.c
+cc  -I../include -c zentrale.c
+cc  -L../lib -o mrzentrale main.o zentrale.o  -lmr_ipc -lcs2_parse -lfsm -lm
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/client_zentrale'
+make -C drehscheibe CFLAGS="" INCLUDE_PATH=../include LIB_PATH=../lib
+make[1]: Entering directory '/home/cmaier/C/mrsystem_1.0/drehscheibe'
+cc  -I../include -c main.c
+cc  -I../include -c drehscheibe.c
+cc  -L../lib -o drehscheibe main.o drehscheibe.o  -lmr_ipc -lm -lmenge -lstack -lliste -ldliste
+make[1]: Leaving directory '/home/cmaier/C/mrsystem_1.0/drehscheibe'

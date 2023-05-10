@@ -1,0 +1,38 @@
+ar: creating libbytestream.a
+ar: creating libcs2_parse.a
+ar: creating libdliste.a
+ar: creating libfsm.a
+ar: creating libliste.a
+ar: creating libmenge.a
+ar: creating libmr_can.a
+decode_can.c: In function ‘MrIpcDecodeToCan’:
+decode_can.c:15:10: warning: implicit declaration of function ‘MrIpcDecode’; did you mean ‘MrCs2Decode’? [-Wimplicit-function-declaration]
+   15 |          MrIpcDecode(Data);
+      |          ^~~~~~~~~~~
+      |          MrCs2Decode
+cmd_get_cmd.c: In function ‘MrIpcCmdGetCmd’:
+cmd_get_cmd.c:13:14: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+   13 |          if (strcmp(cJSON_GetObjectItem((cJSON *)MrIpcGetPrivate(Data),
+      |              ^~~~~~
+ar: creating libmr_ipc.a
+ar: creating libstack.a
+cs2eth.c: In function ‘ProcessSystemData’:
+cs2eth.c:281:4: warning: implicit declaration of function ‘MrIpcDecode’; did you mean ‘MrCs2Decode’? [-Wimplicit-function-declaration]
+  281 |    MrIpcDecode(CmdFrame);
+      |    ^~~~~~~~~~~
+      |    MrCs2Decode
+ms2.c: In function ‘ProcessSystemData’:
+ms2.c:370:4: warning: implicit declaration of function ‘MrIpcDecode’; did you mean ‘MrCs2Decode’? [-Wimplicit-function-declaration]
+  370 |    MrIpcDecode(CmdFrame);
+      |    ^~~~~~~~~~~
+      |    MrCs2Decode
+zentrale.c: In function ‘WriteLokOfLokomotiveCs2’:
+zentrale.c:72:4: warning: implicit declaration of function ‘Cs2WriteHexValueByName’; did you mean ‘Cs2WriteIntValueByName’? [-Wimplicit-function-declaration]
+   72 |    Cs2WriteHexValueByName(LokCs2Stream, "adresse", ZentraleLokGetAdresse(Lok), 1);
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+      |    Cs2WriteIntValueByName
+zentrale.c: In function ‘ProcessSystemData’:
+zentrale.c:1075:4: warning: implicit declaration of function ‘MrIpcDecode’; did you mean ‘MrCs2Decode’? [-Wimplicit-function-declaration]
+ 1075 |    MrIpcDecode(CmdFrame);
+      |    ^~~~~~~~~~~
+      |    MrCs2Decode
