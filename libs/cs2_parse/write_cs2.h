@@ -32,6 +32,7 @@ void Cs2WriteParagraphByName(FILE *Stream, char *Paragraph);
 void Cs2WriteParagraphByType(FILE *Stream, int Cs2ParagraphType);
 void Cs2WriteTitleByName(FILE *Stream, char *Title, int Level);
 void Cs2WriteStringValueByName(FILE *Stream, char *Title, char *Value, int Level);
+void Cs2WriteHexValueByName(FILE *Stream, char *Title, int Value, int Level);
 void Cs2WriteIntValueByName(FILE *Stream, char *Title, int Value, int Level);
 void Cs2WriteULongValueByName(FILE *Stream, char *Title, unsigned long Value, int Level);
 void Cs2WriteHexLongValueByName(FILE *Stream, char *Title, unsigned long Value, int Level);
